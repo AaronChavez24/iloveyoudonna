@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Long Have We Been Together?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+</head>
+<body>
+    <section id="reminder-section">
+        <h1>But wait, I just want to remind you that we've been together for...</h1>
+        <button id="showTimerBtn">Press me!</button>
+    </section>
+
+    <section id="timer-section" style="display: none;">
+        <h1>Endless moments, infinite love :</h1>
+        <div id="timer-container">
+            <p><span id="timer"></span></p>
+        </div>
+        <button id="continueBtn">Continue</button>
+        <button id="backToReminderBtn">Back</button>
+    </section>
+
+    <section id="video-message" style="display: none;">
+        <h1>Captured moments, timeless memories.</h1>
+        <video controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>This video shows our story. It makes me very happy to watch it.
+            Every moment with you is special, and I can't wait to make more memories together.</p>
+        <a href="relive.html"><button id="clickMeBtn">Click Me</button></a>
+    </section>
+
+    <script src="reminder.js"></script>
+</body>
+</html>

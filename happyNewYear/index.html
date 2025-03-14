@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyNewYear!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+</head>
+<body style="display: none;">
+    <section id="question">
+        <h1>Are you ready for a special surprise?</h1>
+        
+        <div id="button-container">
+            <button id="yesBtn">Absolutely!</button>
+            <button id="noBtn">Not yet</button>
+        </div>
+    </section>
+
+    <section id="timer-section" style="display: none;">
+        <h1>We've been together for:</h1>
+        <div id="timer-container">
+            <p><span id="timer"></span></p>
+        </div>
+        <button id="backToMainBtn">Back</button>
+    </section>
+
+    <section id="video-message" style="display: none;">
+        <h1>Your Special Gift Awaits!</h1>
+        <video controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Here's a heartfelt message just for you: You are the best thing that ever happened to me!</p>
+        <div id="next-question">
+            <h1>Want to relive these moments?</h1>
+            <div id="next-button-container">
+                <button id="yesNextBtn">Yes</button>
+                <button id="noNextBtn">No</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos-section" style="display: none;">
+        <h1>Our Precious Moments Together</h1>
+        <img src="your-photo1.jpg" alt="Photo 1">
+        <img src="your-photo2.jpg" alt="Photo 2">
+        <!-- Add more photos as needed -->
+    </section>
+
+    <script>
+        // Check if the user has already entered the correct code
+        if (localStorage.getItem('accessGranted') === 'true') {
+            document.body.style.display = 'block';
+        } else {
+            window.location.href = 'access.html';
+        }
+
+        document.getElementById('yesBtn').addEventListener('click', () => {
+            window.location.href = 'reminder.html';
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

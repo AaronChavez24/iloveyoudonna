@@ -1,0 +1,259 @@
+/* Updated styles.css */
+
+/* Import the Pacifico and Dancing Script fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&display=swap');
+
+/* Original styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffc0cb; /* Light pink background */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to handle smaller screens */
+}
+
+section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 90%;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    text-align: center; /* Center text content */
+    margin: auto; /* Center section */
+}
+
+button {
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    background-color: #ff69b4; /* Pink background */
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Darker shadow effect */
+}
+
+#yesBtn, #yesNextBtn, #backToMainBtn, #noBtn, #noNextBtn, #showTimerBtn, #continueBtn, #backToReminderBtn, #clickMeBtn {
+    background-color: #ff69b4; /* Pink background */
+    color: white;
+    font-weight: bold;
+}
+
+#yesBtn:hover, #yesNextBtn:hover, #backToMainBtn:hover, #noBtn:hover, #noNextBtn:hover, #showTimerBtn:hover, #continueBtn:hover, #backToReminderBtn:hover, #clickMeBtn:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+header {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive; /* Apply the Pacifico font */
+    font-size: 2.5rem; /* Increase the font size */
+    color: #ff6b6b; /* Use the same pink color for consistency */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a light shadow effect */
+    margin-top: 1rem;
+}
+
+#question {
+    background: #ffdfdf; /* Light pink background for the question section */
+    border: 2px solid #ff6b6b; /* Pink border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+#timer-section {
+    background: #fff2f2; /* Even lighter pink background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+#timer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.timer-item {
+    margin: 0 1rem;
+    text-align: center; /* Center text content */
+}
+
+.timer-item span {
+    display: block;
+    font-size: 2rem;
+    color: #ff6b6b;
+}
+
+.timer-item p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center; /* Center text content */
+}
+
+#video-message, #photos-section {
+    border-radius: 15px; /* Rounded corners */
+    padding: 2rem;
+    width: 100%;
+    display: none;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    text-align: center; /* Center text content */
+}
+
+video, img {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners for the video and images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    margin-top: 1rem;
+}
+
+#button-container, #next-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds space between buttons */
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
+#next-question {
+    padding: 2rem;
+    text-align: center; /* Center text content */
+}
+
+/* Styles for timer and links */
+#timer-section {
+    background: #ffdfdf; /* Light pink background for the timer section */
+    border: 2px solid #ff6b6b; /* Pink border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+#timer-container {
+    margin: 1rem 0;
+}
+
+#timer {
+    font-family: 'Pacifico', cursive; /* Apply the Pacifico font to the timer */
+    font-size: 2.5rem; /* Increase the font size */
+    color: #ff6b6b; /* Use the same pink color for consistency */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a light shadow effect */
+    margin-top: 1rem;
+}
+
+#timer-link {
+    font-family: 'Pacifico', cursive; /* Apply the Pacifico font */
+    font-size: 1.5rem; /* Adjust the font size */
+    color: #ff6b6b; /* Use the same pink color for consistency */
+    text-decoration: none; /* Remove underline */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a light shadow effect */
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+#timer-link:hover {
+    color: #ff4d4d; /* Slightly darker pink on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    button {
+        font-size: 1.2rem; /* Adjust button text size for smaller screens */
+        padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
+    }
+
+    .timer-item span {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .timer-item p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
+
+#reminder-section {
+    background: #ffdfdf; /* Light pink background */
+    border: 2px solid #ff6b6b; /* Pink border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+#photos-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff2f2; /* Light pink background */
+    border: 2px solid #ff6b6b; /* Pink border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 2rem;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    text-align: center; /* Center text content */
+}
+
+#photos-section img {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px; /* Rounded corners for the images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    margin-top: 1rem;
+}
+
+/* Styling for the love letter */
+.love-letter {
+    font-family: 'Georgia', serif; /* Apply the Georgia font */
+    font-size: 1.5rem; /* Adjust the font size for readability */
+    color: #ff6b6b; /* Use the same pink color for consistency */
+    margin: 1rem 0; /* Add some spacing between paragraphs */
+    line-height: 1.6; /* Adjust the line height for better readability */
+}
+
+@media (max-width: 600px) {
+    .love-letter {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
